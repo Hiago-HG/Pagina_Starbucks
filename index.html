@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Starbucks Website Landing Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class = "circle"></div>
+            <header>
+                <a href="#" class="logo"><img src="img/logo.png"></a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">What's New</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacus tellus,
+                    tincidunt ut mauris ac, maximus pellentesque erat.<br> Donec nunc orci, auctor sit amet euismod eu,
+                    venenatis non lorem. Donec aliquam est ac velit vestibulum fringilla. </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class='imgBox'>
+                    <img src="img/img1.png" class="starbucks">
+                    </div>
+                    </div>
+                    <div class="thumb">
+                        <li><img id = "bottom" src="img/thumb1.png" onclick="imgSlider('img/img1.png')"> </li>
+                        <li><img src="img/thumb2.png" onclick="imgSlider('img/img2.png')"> </li>
+                        <li><img src="img/thumb3.png" onclick="imgSlider('img/img3.png')"></li>
+                      </div>
+
+                      
+                    <ul class="sci">
+                        <li><a href="#"><img src="img/facebook.png"></a></li>
+                        <li><a href="#"><img src="img/instagram.png"></a></li>
+                        <li><a href="#"><img src="img/twitter.png"></a></li>
+                    </ul>
+        </section>
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.starbucks').src = anything;
+            }
+
+           
+
+        </script>
+
+    </body>
+ </html>
